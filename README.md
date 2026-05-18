@@ -1,73 +1,42 @@
-## Voyager
+# Hannwi's Technical Blog
 
-Just another jekyll theme. Demo: <http://redvi.github.io/voyager>
+Jekyll-based personal technical blog using the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme, hosted on GitHub Pages via GitHub Actions.
 
-### Feathures:
+## Prerequisites
 
-All HTML files are compressed (see `_layouts/compress.html`).
+Requires Ruby 3.0+. If using macOS system Ruby (2.6), install via Homebrew and add to PATH:
 
-**Post**
+> ```bash
+> brew install ruby
+> echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+> source ~/.zshrc
+> ```
 
-All post settings can be changed. Example:
+## Local Development
 
+```bash
+# Install dependencies (first time)
+bundle install
+
+# Serve locally with live reload
+bundle exec jekyll serve
+
+# Build for production
+JEKYLL_ENV=production bundle exec jekyll build
 ```
+
+## Post Front Matter
+
+```yaml
 ---
 layout: post
-bg: '2016/background.jpg'
-title: "Post Heading"
-crawlertitle: "page title"
-summary: "post description"
-date: 2016-06-29
-tags : ['front-end']
-slug: post-url
-author: "Author"
+title: "Post Title"
 categories: posts
+tags: [tag1, tag2]
+date: 2024-01-01
 ---
 ```
 
-`bg` is a path to background of your article. By default backgrounds are placed in the `assets/images` directory.
+## Deployment
 
-**Page**
-
-If page contains `active` tag, it will be show on site menu.
-
-```
----
-layout: page
-title: "About"
-permalink: /about/
-active: about
----
-```
-
-**Archive**
-
-Archive page is sorting posts by tags. No more than one tag in one post.
-
-Good:
-
-```
-tags : ['front-end']
-```
-
-Bad:
-
-```
-tags : ['front-end', 'jekyll']
-```
-
-Don't forget to change `_config.yml`.
-
-**Relative paths**
-
-If your blog is not in the root directory, you can include images with a relative path. For example:
-
-```
-![my_image]({{ site.images | relative_url }}/image.jpg)
-```
-
-## Production environment
-
-Build for production:
-
-`JEKYLL_ENV=production jekyll build`
+Pushing to `master` triggers GitHub Actions, which builds and deploys to GitHub Pages automatically.
