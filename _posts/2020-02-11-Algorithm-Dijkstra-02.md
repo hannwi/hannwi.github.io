@@ -1,12 +1,11 @@
 ---
 layout: post
 title:  "Dijkstra Algorithm 02 (Procdure)"
-crawlertitle: "Dijkstra Algorithm"
+crawlertitle: "Dijkstra Algorithm 02 (Procdure)"
 summary: "Study Dijkstra algorithm"
 date:   2020-02-11
 categories: posts
 tags: 'dijkstra'
-author: Hannwi
 ---
 
 다익스트라 알고리즘의 개념 설명에 이어,

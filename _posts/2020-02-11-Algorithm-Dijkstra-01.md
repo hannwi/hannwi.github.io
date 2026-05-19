@@ -1,12 +1,11 @@
 ---
 layout: post
 title:  "Dijkstra Algorithm 01 (Intro)"
-crawlertitle: "Dijkstra Algorithm"
+crawlertitle: "Dijkstra Algorithm 01 (Intro)"
 summary: "Study Dijkstra algorithm"
 date:   2020-02-11
 categories: posts
 tags: 'dijkstra'
-author: Hannwi
 ---
 
 ### 최단거리 문제
