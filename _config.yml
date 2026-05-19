@@ -1,9 +1,9 @@
 # Site settings
-title: Hannwi's Technical Blog
+title: Hannwi's Tech Blog
 email: entraiger@korea.ac.kr
-description: Posts technical articles, findings, and know-hows.
+description: 공부한 기술 내용을 기록하는 블로그입니다.
 baseurl: ""
-lang: "en"
+lang: "ko"
 url: "https://hannwi.github.io"
 twitter_username:
 github_username: hannwi
@@ -11,22 +11,23 @@ disqus_username:
 
 # Theme
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "default"
+minimal_mistakes_skin: "dirt"
 
 # Author
 author:
   name: "Hannwi"
-  bio: "Technical blog for lifetime study."
+  avatar: "/assets/images/owl.jpg"
+  bio: "공부한 기술 내용을 기록하는 블로그입니다."
   github: "hannwi"
   email: "entraiger@korea.ac.kr"
 
 # Defaults
 defaults:
   - scope:
-      path: ""
-      type: posts
+      path: ""      # 모든 경로
+      type: posts   # _posts/ 의 파일들
     values:
-      layout: single
+      layout: post  # 이 기본값이 적용됨
       author_profile: true
       read_time: true
 
