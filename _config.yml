@@ -11,12 +11,12 @@ disqus_username:
 
 # Theme
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "dirt"
+minimal_mistakes_skin: "dark"
 
 # Author
 author:
   name: "Hannwi"
-  avatar: "/assets/images/owl.jpg"
+  avatar: "/assets/images/harp_seal.jpg"
   bio: "공부한 기술 내용을 기록하는 블로그입니다."
   github: "hannwi"
   email: "entraiger@korea.ac.kr"
@@ -30,6 +30,8 @@ defaults:
       layout: post  # 이 기본값이 적용됨
       author_profile: true
       read_time: true
+      show_date: true
+      classes: wide
 
 # Build settings
 markdown: kramdown
@@ -37,6 +39,7 @@ permalink: /:categories/:title/
 
 plugins:
   - jekyll-include-cache
+  - jekyll-last-modified-at
 
 # Posts settings
 future: true
