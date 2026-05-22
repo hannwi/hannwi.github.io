@@ -6,10 +6,10 @@ summary: "mattpocock/skills 저장소의 engineering, productivity 스킬별 의
 date:   2026-05-18
 categories: posts
 tags: 'ai agent skill'
+mermaid: true
 ---
 
-> **대상 저장소**: [mattpocock/skills](https://github.com/mattpocock/skills)  
-> **작성 기준일**: 2026-05-14
+> AI 에이전트의 스킬 저장소 [mattpocock/skills](https://github.com/mattpocock/skills) 의 내용을 공부합니다.
 
 ← **1부: 왜 에이전트는 실패하는가**는 [여기](/posts/matt-pocock-skills-analysis-1/)에서 볼 수 있습니다.
 

@@ -4,6 +4,15 @@
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+
+$sans-serif: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+  system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+  "Noto Sans KR", "Malgun Gothic", sans-serif;
+
+$right-sidebar-width-narrow: 260px;
+$right-sidebar-width: 360px;
+$right-sidebar-width-wide: 500px;
+
 @import "minimal-mistakes";
 
 .page__hero--overlay {
@@ -11,7 +20,12 @@
 }
 
 .sidebar {
-  background-image: url("/assets/images/rails.jpg");
+  background-image: url("/assets/images/fire.jpg");
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
+}
+
+.mermaid {
+  text-align: center;
 }
